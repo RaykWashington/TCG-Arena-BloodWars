@@ -113,7 +113,7 @@
                 {
                   "section": "Victory_Pool",
                   "style": {
-                    "width": "30vh"
+                    "width": "60vh"
                   }
                 }
               ],
@@ -130,7 +130,7 @@
           "Victory_Pool": {
             "title": "Victory_Pool",
             "isHidden": "no",
-            "height": "MEDIUM",
+            "height": "SMALL",
             "alignment": "START",
             "opponentAlignment": false,
             "noAutoPayTo": false,
@@ -162,7 +162,7 @@
           "Battle_Hands": {
             "title": "Battle_Hands",
             "isHidden": "no",
-            "height": "BIG",
+            "height": "MEDIUM",
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": false,
@@ -178,7 +178,7 @@
           "Challenger_Defender": {
             "title": "Challenger_Defender",
             "isHidden": "no",
-            "height": "BIG",
+            "height": "MEDIUM",
             "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": false,
