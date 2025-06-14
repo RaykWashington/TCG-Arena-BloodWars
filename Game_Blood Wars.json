@@ -69,26 +69,7 @@
                   "style": false,
                   "content": [
                     {
-                      "section": "Victory_Pool",
-                      "style": {
-                        "width": "22vh"
-                      }
-                    }
-                  ],
-                  "isSymetricalForOpponents": false
-                },
-                {
-                  "direction": "row",
-                  "style": {
-                    "width": "28vh"
-                  },
-                  "content": [
-                    {
-                      "section": "Challenger_Defender",
-                      "style": false
-                    },
-                    {
-                      "section": "Battlefields",
+                      "section": "Battle_Hands",
                       "style": false
                     }
                   ],
@@ -96,20 +77,44 @@
                 },
                 {
                   "direction": "column",
-                  "style": false,
-                  "content": [],
+                  "style": {
+                    "width": "48vh"
+                  },
+                  "content": [
+                    {
+                      "section": "Challenger_Defender",
+                      "style": false
+                    }
+                  ],
+                  "isSymetricalForOpponents": false
+                },
+                {
+                  "direction": "column",
+                  "style": {
+                    "width": "36vh"
+                  },
+                  "content": [
+                    {
+                      "section": "Battlefields",
+                      "style": false
+                    }
+                  ],
                   "isSymetricalForOpponents": false
                 }
               ],
               "isSymetricalForOpponents": false
             },
             {
-              "direction": "row",
-              "style": false,
+              "direction": "column",
+              "style": {
+                "justify-content": "start"
+              },
               "content": [
                 {
-                  "section": "Battle_Hands",
-                  "style": false
+                  "section": "Victory_Pool",
+                  "style": {
+                    "width": "30vh"
+                  }
                 }
               ],
               "isSymetricalForOpponents": false
