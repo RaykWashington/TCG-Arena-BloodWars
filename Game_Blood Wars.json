@@ -41,7 +41,7 @@
         "drawOnStart": false,
         "sharedTurn": true,
         "firstPlayerTokenName": "",
-        "drawPerTurn": "2"
+        "drawPerTurn": "1"
       },
       "defaultNotes": "Create battle hands by grouping cards to Warlord.  Right click -  Remove to sendo to Dead Book",
       "tokens": [],
@@ -51,9 +51,10 @@
       "hideFacedDownCards": false,
       "sections": {
         "customSections": [
-          "Battle_Hand",
+          "Battle_Hands",
           "Battlefields",
-          "Victory_Pool"
+          "Victory_Pool",
+          "Challenger_Defender"
         ],
         "layout": {
           "direction": "column",
@@ -64,14 +65,40 @@
               "style": false,
               "content": [
                 {
-                  "section": "Battle_Hand",
-                  "style": false
+                  "direction": "column",
+                  "style": false,
+                  "content": [
+                    {
+                      "section": "Victory_Pool",
+                      "style": {
+                        "width": "22vh"
+                      }
+                    }
+                  ],
+                  "isSymetricalForOpponents": false
                 },
                 {
-                  "section": "Battlefields",
+                  "direction": "row",
                   "style": {
-                    "width": "64vh"
-                  }
+                    "width": "28vh"
+                  },
+                  "content": [
+                    {
+                      "section": "Challenger_Defender",
+                      "style": false
+                    },
+                    {
+                      "section": "Battlefields",
+                      "style": false
+                    }
+                  ],
+                  "isSymetricalForOpponents": false
+                },
+                {
+                  "direction": "column",
+                  "style": false,
+                  "content": [],
+                  "isSymetricalForOpponents": false
                 }
               ],
               "isSymetricalForOpponents": false
@@ -81,7 +108,7 @@
               "style": false,
               "content": [
                 {
-                  "section": "Victory_Pool",
+                  "section": "Battle_Hands",
                   "style": false
                 }
               ],
@@ -90,29 +117,15 @@
           ]
         },
         "categoriesAlreadyOnBoard": [],
-        "autoPlayFromHand": {},
+        "autoPlayFromHand": {
+          "Warolrd": "Battle_Hands"
+        },
         "autoPlayFromStack": {},
         "sectionsDict": {
-          "Battle_Hand": {
-            "title": "Battle_Hand",
-            "isHidden": "no",
-            "height": "BIG",
-            "alignment": "CENTER",
-            "opponentAlignment": false,
-            "noAutoPayTo": false,
-            "isHorizontalAllowed": true,
-            "displayedTitle": "Warlords and Battle Hands",
-            "noQuickActions": false,
-            "enterTapped": false,
-            "enterSpun": false,
-            "isGroupForbidden": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
-          },
           "Victory_Pool": {
             "title": "Victory_Pool",
             "isHidden": "no",
-            "height": "SMALL",
+            "height": "MEDIUM",
             "alignment": "START",
             "opponentAlignment": false,
             "noAutoPayTo": false,
@@ -134,6 +147,38 @@
             "noAutoPayTo": false,
             "isHorizontalAllowed": true,
             "displayedTitle": "Battlefields",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Battle_Hands": {
+            "title": "Battle_Hands",
+            "isHidden": "no",
+            "height": "BIG",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Warlords and Battle Hands",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Challenger_Defender": {
+            "title": "Challenger_Defender",
+            "isHidden": "no",
+            "height": "BIG",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Challenger/Defender",
             "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
