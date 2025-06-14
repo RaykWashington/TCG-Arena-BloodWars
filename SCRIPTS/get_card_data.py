@@ -12,7 +12,7 @@ import json
 
 setPageList = "Blood Wars Basic Set|Rebels and Reinforcements|Factols and Factions,Powers and Proxies"
 card_data = json
-card_data_file = "cardData2.json"
+card_data_file = "card_query_data2.json"
 
 ENDPOINT = "https://cardguide.fandom.com/api.php"  #source of card info
 HEADERS = {"User-Agent": "BloodWars-TCGArena (https://github.com/RaykWashington/TCG-Arena-BloodWars;hellorayk@gmail.com)"} #user-agent info
@@ -23,6 +23,7 @@ def query(request_to_repeat): # -- make continued queries --
     #initiate default params
     request_to_repeat["action"] = "query",
     request_to_repeat["format"] = "json",
+    request_to_repeat['redirects'] = '1'
     last_continue = {}
 
     while True:
@@ -48,13 +49,26 @@ def query(request_to_repeat): # -- make continued queries --
         #continuing out of bounds response
         last_continue = response['continue']
 
-#--RETRIEVING DATA--
+#--GET CARD INFORMATION --
+# using regex "(?<=info\n\|).*" to get information on the column for the required info on the info table
 
+#--RETRIEVING DATA--
 search_string = "pages.*"
-for result in query({'generator': 'linkshere', 'glhlimit': 'max', 'titles':'Blood Wars Basic Set|Rebels and Reinforcements|Factols and Factions|Powers and Proxies', 'prop':'pageimages', 'piprop':'original', 'pilimit':'max'}):
+query_params = {
+    'generator':'linkshere',
+    'titles':'Blood Wars Basic Set|Rebels and Reinforcements|Factols and Factions|Powers and Proxies',
+    'glhlimit': 'max',
+    'prop': 'pageimages',
+    'piprop': 'original',
+    'pilimit': 'max',
+    }
+
+for result in query(query_params):
 
     try:
         with open(card_data_file, 'a+', encoding='utf-8') as file:
             json.dump(jmespath.search(search_string, result), file, ensure_ascii=False, indent=4)
     except(json.JSONDecodeError):
         data = []
+
+
