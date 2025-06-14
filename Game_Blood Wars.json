@@ -1,25 +1,29 @@
 {
   "name": "Blood Wars",
-  "menuBackgroundImage": "",
+  "menuBackgroundImage": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
   "defaultRessources": {
-    "backgrounds": [],
+    "backgrounds": [
+      "https://raykwashington.github.io/TCG-Arena-BloodWars/images/xeremplaymat.png"
+    ],
     "decksUrl": ""
   },
   "customHelp": "",
   "cardRotation": 45,
   "cards": {
-    "dataUrl": "",
-    "cardBack": ""
+    "dataUrl": "https://raykwashington.github.io/TCG-Arena-BloodWars/BloodWars_CardList.json",
+    "cardBack": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521"
   },
   "deckBuilding": {
-    "mainFilters": [],
+    "mainFilters": [
+      "name"
+    ],
     "formats": []
   },
   "gameplay": {
-    "Classic": {
+    "Battle": {
       "mulligan": {
         "info": "",
-        "startingHandSize": "7",
+        "startingHandSize": "6",
         "drawNewHand": true,
         "putSelectionAtBottom": false,
         "drawNewSelectedCards": false
@@ -33,7 +37,7 @@
       "defaultNotes": "",
       "tokens": [],
       "countersStartingValues": [
-        0
+        "0"
       ],
       "hideFacedDownCards": false,
       "sections": {
