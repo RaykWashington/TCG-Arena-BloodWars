@@ -8,7 +8,7 @@
     ],
     "decksUrl": "https://raykwashington.github.io/TCG-Arena-BloodWars/DeckList.json"
   },
-  "customHelp": "Create battle hands by grouping cards to Warlord.  Right click -  Remove to sendo to Dead Book",
+  "customHelp": "",
   "cardRotation": 45,
   "cards": {
     "dataUrl": "https://raykwashington.github.io/TCG-Arena-BloodWars/BloodWars_CardList.json",
@@ -43,7 +43,7 @@
         "firstPlayerTokenName": "",
         "drawPerTurn": "2"
       },
-      "defaultNotes": "",
+      "defaultNotes": "Create battle hands by grouping cards to Warlord.  Right click -  Remove to sendo to Dead Book",
       "tokens": [],
       "countersStartingValues": [
         "0"
