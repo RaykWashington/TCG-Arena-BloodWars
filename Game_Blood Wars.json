@@ -4,12 +4,11 @@
   "defaultRessources": {
     "backgrounds": [
       "https://raykwashington.github.io/TCG-Arena-BloodWars/images/playmat1.jpg",
-      "https://raykwashington.github.io/TCG-Arena-BloodWars/images/playmat2.jpg",
-      "https://raykwashington.github.io/TCG-Arena-BloodWars/images/xeremplaymat.png"
+      "https://raykwashington.github.io/TCG-Arena-BloodWars/images/playmat2.jpg"
     ],
     "decksUrl": "https://raykwashington.github.io/TCG-Arena-BloodWars/DeckList.json"
   },
-  "customHelp": "Create battle hands by grouping cards to Warlord.  Right click -> Removed to sendo to Dead Book",
+  "customHelp": "Create battle hands by grouping cards to Warlord.  Right click -  Remove to sendo to Dead Book",
   "cardRotation": 45,
   "cards": {
     "dataUrl": "https://raykwashington.github.io/TCG-Arena-BloodWars/BloodWars_CardList.json",
@@ -40,7 +39,7 @@
       },
       "newTurn": {
         "drawOnStart": false,
-        "sharedTurn": false,
+        "sharedTurn": true,
         "firstPlayerTokenName": "",
         "drawPerTurn": "2"
       },
@@ -53,7 +52,7 @@
       "sections": {
         "customSections": [
           "Battle_Hand",
-          "Dead_Book",
+          "Battlefields",
           "Victory_Pool"
         ],
         "layout": {
