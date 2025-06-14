@@ -15,9 +15,17 @@
   },
   "deckBuilding": {
     "mainFilters": [
-      "name"
+      "name",
+      "type",
+      "cost"
     ],
-    "formats": []
+    "formats": [
+      {
+        "title": "Battle",
+        "gameplay": "Battle",
+        "customCategories": []
+      }
+    ]
   },
   "gameplay": {
     "Battle": {
@@ -42,7 +50,9 @@
       "hideFacedDownCards": false,
       "sections": {
         "customSections": [
-          "Mana"
+          "Battle_Hand",
+          "Dead_Book",
+          "Victory_Pool"
         ],
         "layout": {
           "direction": "column",
