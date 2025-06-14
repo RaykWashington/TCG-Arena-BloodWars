@@ -98,7 +98,7 @@
             "title": "Battle_Hand",
             "isHidden": "no",
             "height": "BIG",
-            "alignment": "START",
+            "alignment": "CENTER",
             "opponentAlignment": false,
             "noAutoPayTo": false,
             "isHorizontalAllowed": true,
