@@ -96,9 +96,9 @@
         "sectionsDict": {
           "Battle_Hand": {
             "title": "Battle_Hand",
-            "isHidden": "opponent-only",
+            "isHidden": "no",
             "height": "BIG",
-            "alignment": "CENTER",
+            "alignment": "START",
             "opponentAlignment": false,
             "noAutoPayTo": false,
             "isHorizontalAllowed": true,
@@ -114,7 +114,7 @@
             "title": "Dead_Book",
             "isHidden": "no",
             "height": "MEDIUM",
-            "alignment": "CENTER",
+            "alignment": "START",
             "opponentAlignment": false,
             "noAutoPayTo": false,
             "isHorizontalAllowed": true,
@@ -129,8 +129,8 @@
           "Victory_Pool": {
             "title": "Victory_Pool",
             "isHidden": "no",
-            "height": "MEDIUM",
-            "alignment": "CENTER",
+            "height": "SMALL",
+            "alignment": "START",
             "opponentAlignment": false,
             "noAutoPayTo": false,
             "isHorizontalAllowed": true,
