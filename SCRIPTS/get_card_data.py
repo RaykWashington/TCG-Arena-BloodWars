@@ -12,7 +12,8 @@ setPageList = ["Blood Wars Basic Set", "Rebels and Reinforcements","Factols and 
 card_list = {}
 
 ENDPOINT = "https://cardguide.fandom.com/api.php"  #source of card info
-
+HEADERS = {"User-Agent": "BloodWars-TCGArena (https://github.com/RaykWashington/TCG-Arena-BloodWars;hellorayk@gmail.com)"}
+ 
 # -- FUNCTIONS --
 
 def query(request_to_repeat): # -- make continued queries --
