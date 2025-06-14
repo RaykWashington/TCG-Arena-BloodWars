@@ -45,7 +45,7 @@
       "defaultNotes": "",
       "tokens": [],
       "countersStartingValues": [
-        "0"
+        "19"
       ],
       "hideFacedDownCards": false,
       "sections": {
@@ -75,7 +75,9 @@
               "content": [
                 {
                   "section": "Dead_Book",
-                  "style": ""
+                  "style": {
+                    "width": "40vh"
+                  }
                 },
                 {
                   "section": "Victory_Pool",
@@ -90,21 +92,53 @@
         "autoPlayFromHand": {},
         "autoPlayFromStack": {},
         "sectionsDict": {
-          "Mana": {
-            "title": "Mana",
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "START",
+          "Battle_Hand": {
+            "title": "Battle_Hand",
+            "isHidden": "opponent-only",
+            "height": "BIG",
+            "alignment": "CENTER",
             "opponentAlignment": false,
-            "noAutoPayTo": "true",
-            "isHorizontalAllowed": false,
-            "displayedTitle": "Ressources",
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Warlords and Battle Hands",
+            "noQuickActions": false,
             "enterTapped": false,
             "enterSpun": false,
             "isGroupForbidden": false,
             "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false,
-            "noQuickActions": false
+            "showHiddenCardInHistory": false
+          },
+          "Dead_Book": {
+            "title": "Dead_Book",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Dead Book",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Victory_Pool": {
+            "title": "Victory_Pool",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Victory Pool",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
           }
         }
       }
