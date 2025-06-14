@@ -1,18 +1,21 @@
 import requests
 import jmespath
+import json
 
 
-#Script structure:
-# - get list of cards from each set (BWBS, Rebels and Reinforcements, Factols and Factions, Powers and Proxies)
-# - generate list of images urls from continued requests
+#-- SCRIPT STRUCTURE--
+# - get list of cards and images from each set (BWBS, Rebels and Reinforcements, Factols and Factions, Powers and Proxies)
+# - project list into TCG-Arena json format
+# - wish me luck
 
 # -- INITIATE VARIABLES --
 
-setPageList = ["Blood Wars Basic Set", "Rebels and Reinforcements","Factols and Factions", "Powers and Proxies"]
-card_list = {}
+setPageList = "Blood Wars Basic Set|Rebels and Reinforcements|Factols and Factions,Powers and Proxies"
+card_data = json
+card_data_file = "cardData2.json"
 
 ENDPOINT = "https://cardguide.fandom.com/api.php"  #source of card info
-HEADERS = {"User-Agent": "BloodWars-TCGArena (https://github.com/RaykWashington/TCG-Arena-BloodWars;hellorayk@gmail.com)"}
+HEADERS = {"User-Agent": "BloodWars-TCGArena (https://github.com/RaykWashington/TCG-Arena-BloodWars;hellorayk@gmail.com)"} #user-agent info
  
 # -- FUNCTIONS --
 
@@ -26,7 +29,7 @@ def query(request_to_repeat): # -- make continued queries --
         
         iteration_req = request_to_repeat.copy() #clone original request using requests.copy method
         iteration_req.update(last_continue) # Modify it with the values returned in the 'continue' section of the last result.
-        response = requests.get(ENDPOINT, params = iteration_req).json()         # make request to mediawiki api
+        response = requests.get(ENDPOINT, params = iteration_req, headers=HEADERS).json()         # make request to mediawiki api
 
         #catch errors
         if 'error' in response:
@@ -44,7 +47,14 @@ def query(request_to_repeat): # -- make continued queries --
 
         #continuing out of bounds response
         last_continue = response['continue']
-        
-for set in setPageList:
-    for result in query({'prop':'linkshere', 'lhprop': 'pageid|title','lhlimit':'max','titles':set}):
-        print(result)
+
+#--RETRIEVING DATA--
+
+search_string = "pages.*"
+for result in query({'generator': 'linkshere', 'glhlimit': 'max', 'titles':'Blood Wars Basic Set|Rebels and Reinforcements|Factols and Factions|Powers and Proxies', 'prop':'pageimages', 'piprop':'original', 'pilimit':'max'}):
+
+    try:
+        with open(card_data_file, 'a+', encoding='utf-8') as file:
+            json.dump(jmespath.search(search_string, result), file, ensure_ascii=False, indent=4)
+    except(json.JSONDecodeError):
+        data = []
