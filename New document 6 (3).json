@@ -1,4 +1,21 @@
 {
+  "12354": {
+    "id": "12354",
+    "face": {
+      "front": {
+        "name": "Blood Wars CCG",
+        "type": "Warlord",
+        "cost": 0,
+        "image": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+        "isHorizontal": false
+      }
+    },
+    "name": "Blood Wars CCG",
+    "alignment": "",
+    "type": "Warlord",
+    "IS": 0,
+    "CS": 0
+  },
   "12400": {
     "id": "12400",
     "face": {
@@ -7326,6 +7343,23 @@
     "IS": 0,
     "CS": 0
   },
+  "13768": {
+    "id": "13768",
+    "face": {
+      "front": {
+        "name": "Thread:Acer4666/@comment-1924931-20120831132311/@comment-1474707-20120902191111",
+        "type": "Warlord",
+        "cost": 0,
+        "image": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+        "isHorizontal": false
+      }
+    },
+    "name": "Thread:Acer4666/@comment-1924931-20120831132311/@comment-1474707-20120902191111",
+    "alignment": "",
+    "type": "Warlord",
+    "IS": 0,
+    "CS": 0
+  },
   "13776": {
     "id": "13776",
     "face": {
@@ -10233,6 +10267,23 @@
     "IS": 0,
     "CS": 0
   },
+  "14252": {
+    "id": "14252",
+    "face": {
+      "front": {
+        "name": "Thread:Acer4666/@comment-1924931-20120831132311/@comment-1474707-20120904210449",
+        "type": "Warlord",
+        "cost": 0,
+        "image": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+        "isHorizontal": false
+      }
+    },
+    "name": "Thread:Acer4666/@comment-1924931-20120831132311/@comment-1474707-20120904210449",
+    "alignment": "",
+    "type": "Warlord",
+    "IS": 0,
+    "CS": 0
+  },
   "14255": {
     "id": "14255",
     "face": {
@@ -10267,6 +10318,23 @@
     "IS": 0,
     "CS": 0
   },
+  "21583": {
+    "id": "21583",
+    "face": {
+      "front": {
+        "name": "Abbreviations",
+        "type": "Warlord",
+        "cost": 0,
+        "image": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+        "isHorizontal": false
+      }
+    },
+    "name": "Abbreviations",
+    "alignment": "",
+    "type": "Warlord",
+    "IS": 0,
+    "CS": 0
+  },
   "27836": {
     "id": "27836",
     "face": {
@@ -10296,6 +10364,40 @@
       }
     },
     "name": "Apollo",
+    "alignment": "",
+    "type": "Warlord",
+    "IS": 0,
+    "CS": 0
+  },
+  "40006": {
+    "id": "40006",
+    "face": {
+      "front": {
+        "name": "Thread:Mathujoke/@comment-22439-20141202073611",
+        "type": "Warlord",
+        "cost": 0,
+        "image": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+        "isHorizontal": false
+      }
+    },
+    "name": "Thread:Mathujoke/@comment-22439-20141202073611",
+    "alignment": "",
+    "type": "Warlord",
+    "IS": 0,
+    "CS": 0
+  },
+  "40008": {
+    "id": "40008",
+    "face": {
+      "front": {
+        "name": "Thread:217.133.70.157/@comment-22439-20141202104257",
+        "type": "Warlord",
+        "cost": 0,
+        "image": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+        "isHorizontal": false
+      }
+    },
+    "name": "Thread:217.133.70.157/@comment-22439-20141202104257",
     "alignment": "",
     "type": "Warlord",
     "IS": 0,
@@ -10347,6 +10449,23 @@
       }
     },
     "name": "Rain of Fire",
+    "alignment": "",
+    "type": "Warlord",
+    "IS": 0,
+    "CS": 0
+  },
+  "68523": {
+    "id": "68523",
+    "face": {
+      "front": {
+        "name": "Powers & Proxies",
+        "type": "Warlord",
+        "cost": 0,
+        "image": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+        "isHorizontal": false
+      }
+    },
+    "name": "Powers & Proxies",
     "alignment": "",
     "type": "Warlord",
     "IS": 0,
