@@ -1,6 +1,6 @@
 {
   "name": "Blood Wars",
-  "menuBackgroundImage": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521",
+  "menuBackgroundImage": "https://raykwashington.github.io/TCG-Arena-BloodWars/images/Blood_Wars_back.jpg",
   "defaultRessources": {
     "backgrounds": [
       "https://raykwashington.github.io/TCG-Arena-BloodWars/images/playmat1.jpg",
@@ -12,7 +12,7 @@
   "cardRotation": 45,
   "cards": {
     "dataUrl": "https://raykwashington.github.io/TCG-Arena-BloodWars/BloodWars_CardList.json",
-    "cardBack": "https://static.wikia.nocookie.net/cardguide/images/5/52/Blood_Wars_back.jpg/revision/latest?cb=20120831130521"
+    "cardBack": "https://raykwashington.github.io/TCG-Arena-BloodWars/images/Blood_Wars_back.jpg"
   },
   "deckBuilding": {
     "mainFilters": [
