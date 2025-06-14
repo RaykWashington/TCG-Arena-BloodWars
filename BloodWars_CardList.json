@@ -10317,39 +10317,5 @@
     "type": "Warlord",
     "IS": 0,
     "CS": 0
-  },
-  "61639": {
-    "id": "61639",
-    "face": {
-      "front": {
-        "name": "Sneak Attack",
-        "type": "Warlord",
-        "cost": 0,
-        "image": "https://static.wikia.nocookie.net/cardguide/images/e/ea/Sneakattack-WE.gif/revision/latest?cb=20151112212552",
-        "isHorizontal": false
-      }
-    },
-    "name": "Sneak Attack",
-    "alignment": "",
-    "type": "Warlord",
-    "IS": 0,
-    "CS": 0
-  },
-  "62604": {
-    "id": "62604",
-    "face": {
-      "front": {
-        "name": "Rain of Fire",
-        "type": "Warlord",
-        "cost": 0,
-        "image": "https://static.wikia.nocookie.net/cardguide/images/6/63/RainOfFire-TBG.jpg/revision/latest?cb=20180427185546",
-        "isHorizontal": false
-      }
-    },
-    "name": "Rain of Fire",
-    "alignment": "",
-    "type": "Warlord",
-    "IS": 0,
-    "CS": 0
   }
 }
