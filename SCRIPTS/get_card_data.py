@@ -62,7 +62,7 @@ query_params = {
     'piprop': 'original',
     'pilimit': 'max',
     }
-
+##consertar essa iteracao, pq os parametros que nao sao reconhecidos no limit de cada busca ()'ghlimit' por exemplo), ou seja, estao out of bound e não tem o parametro 'continue' pra prosseguir fazem repetir uma iteração sem o paramerto problematico, o que causa repeticao de entradas e artefatos no arquivo de saida
 for result in query(query_params):
 
     try:
