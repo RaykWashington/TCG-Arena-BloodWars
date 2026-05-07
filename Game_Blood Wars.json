@@ -64,8 +64,7 @@
           "Warlord_2",
           "Warlord_3",
           "Warlord_4",
-          "Warlord_5",
-          "FirstPlayer"
+          "Warlord_5"
         ],
         "layout": {
           "direction": "row",
@@ -474,55 +473,6 @@
             "isGroupForbidden": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
-          },
-           "FirstPlayer": {
-              "type": "custom",
-              "blueprint": {
-                "type": "div",
-                "props": {
-                  "className": "position-absolute top-0 start-50 shadow on-section-hovered",
-                  "style": {
-                    "height": "4vh",
-                    "width": "4vh",
-                    "translate": "-50%",
-                    "borderRadius": "50%",
-                    "zIndex": 1000
-                    }
-                  },
-                  "children": [
-                      {
-                        "type": "img",
-                        "props": {
-                          "className": "h-100 w-100",
-                          "style": {
-                              "opacity": "{{game.data.FirstPlayer.enabled ? '1' : '0'}}"
-                          },
-                          "src": "https://valcur.github.io/TCG-Arena-Altered/Images/Assets/first-player.png"
-                        }
-                      },
-                      {
-                        "type": "button",
-                        "props": {
-                          "className": "hovered-reveal position-absolute top-50 start-50 translate-middle opp-hidden",
-                          "style": {
-                              "display": "{{game.data.FirstPlayer.enabled ? 'none' : 'flex'}}"
-                          }
-                        },
-                        "onClick": "game.data.FirstPlayer.enabled = true; game.data.FirstPlayer.lastOwnerOrderPosition = game.turn.orderPosition; chatLog('has taken the first player token')",
-                        "children": "Take"
-                      }
-                  ]
-              },
-              "defaultValue": {
-                  "enabled": false,
-                  "lastOwnerOrderPosition": -1
-              },
-              "events": {
-                  "onStart": "if (game.turn.isMyTurn) { game.data.FirstPlayer = { enabled: true, lastOwnerOrderPosition: game.turn.orderPosition } }",
-                  "onOpponentUpdate": "if (opponentGame.data.FirstPlayer.enabled) { game.data.FirstPlayer = { enabled: false, lastOwnerOrderPosition: opponentGame.turn.orderPosition } }",
-                  "onNewTurn": "const newFirstPlayer = (game.data.FirstPlayer.lastOwnerOrderPosition + 1) % game.turn.totalPlayers; game.data.FirstPlayer = { enabled: newFirstPlayer === game.turn.orderPosition, lastOwnerOrderPosition: newFirstPlayer }"
-              }
-              
           }
         }
       }
