@@ -487,24 +487,52 @@
                 "style": {
                   "width": "11rem"
                 },
-                "className": "position-absolute top-0 start-0 box-container align-items-center text-nowrap gap-1 p-1 ps-2"
+                "className": "custom-section shared position-fixed top-50 start-0 w-100 d-flex justify-content-center align-items-center"
               },
               "children": [
-                "Counter 1",
-                {
-                  "type": "input-number",
-                  "props": {
-                    "value": "{{game.data.Demo.counter_1}}"
-                  },
-                  "onChange": "game.data.Demo.counter_1 = value; chatLog('counter is now at ' + value + ` (`+ (delta > 0 ? `+` + delta : delta) + ')')"
-                },
-                "Counter 2",
                 {
                   "type": "button",
                   "props": {
+                    "style" : {
+                      "display" : "none"
+                    },
                     "value": "{{game.data.Demo.counter_1}}"
                   },
-                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')"
+                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
+                   "children" : "10"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "style" : {
+                      "display" : "none"
+                    },
+                    "value": "{{game.data.Demo.counter_1}}"
+                  },
+                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
+                   "children" : "9"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "style" : {
+                      "display" : "none"
+                    },
+                    "value": "{{game.data.Demo.counter_1}}"
+                  },
+                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
+                   "children" : "8"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "style" : {
+                      "display" : "none"
+                    },
+                    "value": "{{game.data.Demo.counter_1}}"
+                  },
+                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
+                   "children" : "7"
                 }
               ]
             },
