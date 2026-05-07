@@ -43,7 +43,7 @@
         "drawOnStart": false,
         "sharedTurn": false,
         "firstPlayerTokenName": "",
-        "drawPerTurn": "1"
+        "drawPerTurn": "2"
       },
       "defaultNotes": "Put batle hand on the section beneath each warlord. You can put your entire command hand aside by clicking on the quick action options and sending all to Remove/Hidden.",
       "tokens": [],
