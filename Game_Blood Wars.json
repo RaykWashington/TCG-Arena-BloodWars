@@ -156,7 +156,8 @@
                 }
               ],
               "isSymetricalForOpponents": false
-            }
+            },
+            { "section": "Teste"}
           ]
         },
         "categoriesAlreadyOnBoard": [],
