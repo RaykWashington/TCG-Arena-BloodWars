@@ -497,6 +497,14 @@
                     "value": "{{game.data.Demo.counter_1}}"
                   },
                   "onChange": "game.data.Demo.counter_1 = value; chatLog('counter is now at ' + value + ` (`+ (delta > 0 ? `+` + delta : delta) + ')')"
+                },
+                "Counter 2",
+                {
+                  "type": "button",
+                  "props": {
+                    "value": "{{game.data.Demo.counter_1}}"
+                  },
+                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')"
                 }
               ]
             },
