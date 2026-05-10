@@ -497,10 +497,11 @@
                   "type": "button",
                   "props": {
                     "style" : {
-                      "display" : "none"
+                      "height": "6vh"
                     },
                     "value": "{{game.data.Teste.counter_1}}"
                   },
+                  "className" : "btn btn-blurry",
                    "onChange": "game.data.Teste.counter_1 = 0; chatLog('resetei essa caceta')",
                    "children" : "10"
                 }
