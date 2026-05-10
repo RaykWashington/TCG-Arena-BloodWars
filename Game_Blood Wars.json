@@ -499,15 +499,15 @@
                     "style" : {
                       "display" : "none"
                     },
-                    "value": "{{game.data.Demo.counter_1}}"
+                    "value": "{{game.data.Teste.counter_1}}"
                   },
-                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
+                   "onChange": "game.data.Teste.counter_1 = 0; chatLog('resetei essa caceta')",
                    "children" : "10"
                 }
               ]
             },
             "events": {
-              "onNewTurn": "game.data.Demo.counter_1 = 0"
+              "onNewTurn": "game.data.Teste.counter_1 = 0"
             }
           }
         }
