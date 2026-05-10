@@ -485,7 +485,10 @@
               "type": "div",
               "props": {
                 "style": {
-                  "width": "11rem"
+                  "height": "10vh",
+                  "translate": "0px -50%",
+                  "margin-left": "var(--left-offset-centered)",
+                  "gap": "0.5vh"
                 },
                 "className": "custom-section shared position-fixed top-50 start-0 w-100 d-flex justify-content-center align-items-center"
               },
@@ -500,39 +503,6 @@
                   },
                    "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
                    "children" : "10"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "style" : {
-                      "display" : "none"
-                    },
-                    "value": "{{game.data.Demo.counter_1}}"
-                  },
-                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
-                   "children" : "9"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "style" : {
-                      "display" : "none"
-                    },
-                    "value": "{{game.data.Demo.counter_1}}"
-                  },
-                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
-                   "children" : "8"
-                },
-                {
-                  "type": "button",
-                  "props": {
-                    "style" : {
-                      "display" : "none"
-                    },
-                    "value": "{{game.data.Demo.counter_1}}"
-                  },
-                   "onChange": "game.data.Demo.counter_1 = 0; chatLog('resetei essa caceta')",
-                   "children" : "7"
                 }
               ]
             },
