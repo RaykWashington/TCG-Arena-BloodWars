@@ -496,185 +496,184 @@
                 {
                   "type": "div",
                   "props": {
-                    "className": "memoryGaugeSelf"
                   },
                   "children" :[
                     {
                       "type": "style",
-                      "children" : "input[type='radio']{display: none;} input[type='radio']:checked + label{background-color: #52c79e; color: white; border-color: #00babe;} label{ display: inline-block; background-color: #1d1f2e; padding: 10px 20px; border: 2px solid white; border-radius: 60px; cursor: pointer; transition: all 0.3s;}"
+                      "children" : "input[type='radio']{display: none;} input[type='radio']:checked + label{background-color: #52c79e; color: white; border-color: #00babe;} label{ display: inline-block; background-color: #1d1f2e; padding: 10px 20px; border: 2px solid white; border-radius: 60px; cursor: pointer; transition: all 0.3s;} .memoryGaugeOpponent{display: inline-block; transform: rotate(180deg);}"
                     },
                     {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge10",
-                        "name" : "memoryGauge",
-                        "value" : "10"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge10"
-                      },
-                      "children": "10"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge9",
-                        "name" : "memoryGauge",
-                        "value" : "9"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge9"
-                      },
-                      "children": "9"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge8",
-                        "name" : "memoryGauge",
-                        "value" : "8"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge8"
-                      },
-                      "children": "8"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge7",
-                        "name" : "memoryGauge",
-                        "value" : "7"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge7"
-                      },
-                      "children": "7"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge6",
-                        "name" : "memoryGauge",
-                        "value" : "6"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge6"
-                      },
-                      "children": "6"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge5",
-                        "name" : "memoryGauge",
-                        "value" : "5"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge5"
-                      },
-                      "children": "5"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge4",
-                        "name" : "memoryGauge",
-                        "value" : "4"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge4"
-                      },
-                      "children": "4"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge3",
-                        "name" : "memoryGauge",
-                        "value" : "3"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge3"
-                      },
-                      "children": "3"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge2",
-                        "name" : "memoryGauge",
-                        "value" : "2"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge3"
-                      },
-                      "children": "2"
-                    },
-                    {
-                      "type": "input",
-                      "props": {
-                        "type" : "radio",
-                        "id" : "gauge1",
-                        "name" : "memoryGauge",
-                        "value" : "1"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "props": {
-                        "for": "gauge1"
-                      },
-                      "children": "1"
+                      "type": "div",
+                      "className": "memoryGaugeSelf",
+                      "children" : [
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge10",
+                            "name" : "memoryGauge",
+                            "value" : "10"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge10"
+                          },
+                          "children": "10"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge9",
+                            "name" : "memoryGauge",
+                            "value" : "9"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge9"
+                          },
+                          "children": "9"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge8",
+                            "name" : "memoryGauge",
+                            "value" : "8"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge8"
+                          },
+                          "children": "8"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge7",
+                            "name" : "memoryGauge",
+                            "value" : "7"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge7"
+                          },
+                          "children": "7"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge6",
+                            "name" : "memoryGauge",
+                            "value" : "6"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge6"
+                          },
+                          "children": "6"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge5",
+                            "name" : "memoryGauge",
+                            "value" : "5"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge5"
+                          },
+                          "children": "5"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge4",
+                            "name" : "memoryGauge",
+                            "value" : "4"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge4"
+                          },
+                          "children": "4"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge3",
+                            "name" : "memoryGauge",
+                            "value" : "3"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge3"
+                          },
+                          "children": "3"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge2",
+                            "name" : "memoryGauge",
+                            "value" : "2"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge3"
+                          },
+                          "children": "2"
+                        },
+                        {
+                          "type": "input",
+                          "props": {
+                            "type" : "radio",
+                            "id" : "gauge1",
+                            "name" : "memoryGauge",
+                            "value" : "1"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "props": {
+                            "for": "gauge1"
+                          },
+                          "children": "1"
+                        }
+                      ]
                     }
                   ]
                 },
                 {
                   "type": "div",
-                  "props": {
-                    "className": "memoryGaugeOpponent"
-                  },
+                  "className": "memoryGaugeOpponent",
                   "children" :[
-                    {
-                      "type": "style",
-                      "children" : "input[type='radio']{display: none;} input[type='radio']:checked + label{background-color: #823600; color: white; border-color: #00babe;} label{display: inline-block; background-color: #4d1f14; padding: 10px 20px; border: 2px solid white; border-radius: 60px; cursor: pointer; transition: all 0.3s;}"
-                    },
                     {
                       "type": "input",
                       "props": {
