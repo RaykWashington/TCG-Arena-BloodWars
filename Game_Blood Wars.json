@@ -479,8 +479,8 @@
           "Teste" : {
             "type": "custom",
             "isShared": "true",
-            "defaultValue": {
-              "counter_1": 0
+            "memoryGaugePos": {
+              "pos": 0
             },
             "blueprint": {
               "type": "div",
@@ -496,8 +496,6 @@
               "children": [
                 {
                   "type": "div",
-                  "props": {
-                  },
                   "children" :[
                     {
                       "type": "style",
@@ -505,11 +503,14 @@
                     },
                     {
                       "type": "div",
-                      "style":{
-                        "padding": "5px",
-                        "background-color": "#0e0d4a",
-                        "border-radius": "5px"
-                      },
+                      "props" :{
+                          "style":{
+                          "padding": "5px",
+                          "background-color": "#0e0d4a",
+                          "border-radius": "5px"
+                        }
+                      }
+                      ,
                       "className": "memoryGaugeSelf",
                       "children" : [
                         {
@@ -705,16 +706,14 @@
                 },
                 {
                   "type": "div",
-                  "style":{
-                        "padding": "5px",
-                        "background-color": "#0d4a3d",
-                        "border-radius": "5px"
-                      },
                   "className": "memoryGaugeOpponent",
                   "props":{
                     "style": {
                       "display" : "inline-block",
-                      "transform": "rotate(180deg)"
+                      "transform": "rotate(180deg)",
+                      "padding": "5px",
+                      "background-color": "#0d4a3d",
+                      "border-radius": "5px"
                     }
                   },
                   "children" :[
@@ -891,6 +890,9 @@
                   ]
                 }
               ]
+            },
+            "events": {
+
             }
           }
         }
