@@ -661,7 +661,7 @@
                           "type": "label",
                           "props": {
                             "className": "labelGauge",
-                            "for": "gauge3"
+                            "for": "gauge2"
                           },
                           "children": "2"
                         },
@@ -690,7 +690,7 @@
                   "type": "input",
                   "props": {
                     "type" : "radio",
-                    "id" : "gauge-0",
+                    "id" : "gauge0",
                     "name" : "memoryGauge",
                     "value" : "0"
                   }
