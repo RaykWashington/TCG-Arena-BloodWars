@@ -478,6 +478,7 @@
           },
           "Teste" : {
             "type": "custom",
+            "isShared": "true",
             "defaultValue": {
               "counter_1": 0
             },
@@ -490,7 +491,7 @@
                   "margin-left": "var(--left-offset-centered)",
                   "gap": "0.5vh"
                 },
-                "className": "custom-section shared position-fixed top-50 start-0 w-100 d-flex justify-content-center align-items-center"
+                "className": "position-fixed top-50 start-0 w-100 d-flex justify-content-center align-items-center"
               },
               "children": [
                 {
@@ -504,6 +505,11 @@
                     },
                     {
                       "type": "div",
+                      "style":{
+                        "padding": "5px",
+                        "background-color": "#0e0d4a",
+                        "border-radius": "5px"
+                      },
                       "className": "memoryGaugeSelf",
                       "children" : [
                         {
@@ -699,6 +705,11 @@
                 },
                 {
                   "type": "div",
+                  "style":{
+                        "padding": "5px",
+                        "background-color": "#0d4a3d",
+                        "border-radius": "5px"
+                      },
                   "className": "memoryGaugeOpponent",
                   "props":{
                     "style": {
