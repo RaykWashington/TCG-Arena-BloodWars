@@ -520,7 +520,8 @@
                             "id" : "gauge10",
                             "name" : "memoryGauge",
                             "value" : "10"
-                          }
+                          },
+                          "onChange" : "game.data.Teste.memoryGaugePos = value; chatlog('rolou uma parada');"
                         },
                         {
                           "type": "label",
@@ -890,9 +891,6 @@
                   ]
                 }
               ]
-            },
-            "events": {
-
             }
           }
         }
