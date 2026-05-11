@@ -494,6 +494,68 @@
               },
               "children": [
                 {
+                  "type": "div",
+                  "props": {
+                    "className": "buttonGroup"
+                  },
+                  "children" :[
+                    {
+                      "type" : "style",
+                      "props": {
+                        "input[type-'radio']" : {
+                            "display": "none"
+                          },
+                      "label" : {
+                        "display" : "inline-block",
+                        "background-color" : "#52c79e",
+                        "padding" : "10px 20 px",
+                        "border" : "2px solid white",
+                        "border-radius" : "60px",
+                        "cursor" : "pointer",
+                        "transition": "all 0,2s"
+                        },
+                      "input[type='radio']: focus + label": {
+                          "background-color" : "#007bff",
+                          "color" : "white",
+                          "border-color": "#0056b3"
+                        }
+                      }
+                    },
+                    {
+                      "type": "input",
+                      "props": {
+                        "type" : "radio",
+                        "id" : "gauge10",
+                        "name" : "memoryGauge",
+                        "value" : "10"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "props": {
+                        "for": "gauge10"
+                      },
+                      "children": "10"
+                    },
+                    {
+                      "type": "input",
+                      "props": {
+                        "type" : "radio",
+                        "id" : "gauge9",
+                        "name" : "memoryGauge",
+                        "value" : "9"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "props": {
+                        "for": "gauge9"
+                      },
+                      "children": "9"
+                    }
+                  ]
+                },
+                {
                   "type": "button",
                   "props": {
                     "style" : {
@@ -501,7 +563,6 @@
                     },
                     "value": "{{game.data.Teste.counter_1}}"
                   },
-                  "className" : "btn btn-blurry",
                    "onChange": "game.data.Teste.counter_1 = 0; chatLog('resetei essa caceta')",
                    "children" : "10"
                 }
