@@ -500,6 +500,10 @@
                   },
                   "children" :[
                     {
+                      "type": "style",
+                      "children" : "label:{background-color:#00babe;}"
+                    },
+                    {
                       "type": "input",
                       "props": {
                         "type" : "radio",
