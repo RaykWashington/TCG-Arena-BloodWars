@@ -506,7 +506,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge10",
                         "name" : "memoryGauge",
                         "value" : "10"
@@ -522,7 +522,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge9",
                         "name" : "memoryGauge",
                         "value" : "9"
@@ -538,7 +538,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge8",
                         "name" : "memoryGauge",
                         "value" : "8"
@@ -554,7 +554,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge7",
                         "name" : "memoryGauge",
                         "value" : "7"
@@ -570,7 +570,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge6",
                         "name" : "memoryGauge",
                         "value" : "6"
@@ -586,7 +586,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge5",
                         "name" : "memoryGauge",
                         "value" : "5"
@@ -602,7 +602,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge4",
                         "name" : "memoryGauge",
                         "value" : "4"
@@ -618,7 +618,7 @@
                     {
                       "type": "input",
                       "props": {
-                        "className" : "radio",
+                        "type" : "radio",
                         "id" : "gauge3",
                         "name" : "memoryGauge",
                         "value" : "3"
